@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Halo Coffee</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #121212;
+      color: #f5f5f5;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #d4a373;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #1a1a1a;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #d4a373;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .menu-category {
+      margin-bottom: 40px;
+    }
+
+    .menu-category h2 {
+      color: #d4a373;
+      border-bottom: 2px solid #d4a373;
+      padding-bottom: 10px;
+    }
+
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .item {
+      background-color: #1e1e1e;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .item:hover {
+      transform: translateY(-5px);
+    }
+
+    .item h3 {
+      margin: 10px 0 5px;
+      color: #fff;
+    }
+
+    .item p {
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #333;
+      background-color: #1a1a1a;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Halo Coffee ☕</h1>
+    <p>Where aroma meets comfort</p>
+  </header>
+
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+
+    <div class="menu-category">
+      <h2>Tea</h2>
+      <div class="menu-items">
+        <div class="item">
+          <h3>Mint Tea</h3>
+          <p>Traditional Moroccan mint tea with fresh leaves.</p>
+        </div>
+        <div class="item">
+          <h3>Black Tea</h3>
+          <p>Rich and smooth, served hot or cold.</p>
+        </div>
+        <div class="item">
+          <h3>Green Tea</h3>
+          <p>Light and refreshing, full of antioxidants.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h2>Coffee</h2>
+      <div class="menu-items">
+        <div class="item">
+          <h3>Espresso</h3>
+          <p>Pure energy in a small cup.</p>
+        </div>
+        <div class="item">
+          <h3>Cappuccino</h3>
+          <p>Creamy milk foam and bold coffee flavor.</p>
+        </div>
+        <div class="item">
+          <h3>Latte</h3>
+          <p>Smooth and balanced, made with fresh milk.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h2>Cakes</h2>
+      <div class="menu-items">
+        <div class="item">
+          <h3>Chocolate Cake</h3>
+          <p>Rich, moist, and topped with ganache.</p>
+        </div>
+        <div class="item">
+          <h3>Cheesecake</h3>
+          <p>Classic creamy cheesecake with biscuit base.</p>
+        </div>
+        <div class="item">
+          <h3>Lemon Tart</h3>
+          <p>Sweet and tangy — a perfect balance.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h2>Moroccan Breakfasts</h2>
+      <div class="menu-items">
+        <div class="item">
+          <h3>Msemen</h3>
+          <p>Layered Moroccan pancakes served with honey and butter.</p>
+        </div>
+        <div class="item">
+          <h3>Baghrir</h3>
+          <p>Soft, spongy pancakes with thousands of holes.</p>
+        </div>
+        <div class="item">
+          <h3>Amlou & Bread</h3>
+          <p>Homemade almond paste with argan oil and fresh bread.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      At <strong>Halo Coffee</strong>, we bring the spirit of Moroccan hospitality into every cup.  
+      Enjoy premium drinks and authentic flavors in a cozy, modern atmosphere.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:contact@halocoffee.com" style="color:#d4a373;">contact@halocoffee.com</a></p>
+    <p>Address: Avenue Hassan II, Al Hoceima, Morocco</p>
+  </section>
+
+  <footer>
+    © 2025 Halo Coffee. All rights reserved.
+  </footer>
+</body>
+</html>
